@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bread Money Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-950 h-screen">
+    <div class="bg-blue-500 w-full size-12 flex flex-col items-start ps-8 justify-center text-slate-50 text-lg font-bold">
+        <a href="https://github.com/Dedo-Finger2" class="transition-all ease-in-out hover:text-blue-800">2024 &copy; Bread Money Return</a>
+    </div>
+
+    <div class="py-12 pb-5 px-20 md:py-24 md:px-32">
+        <!-- Header -->
+        <header class="flex justify-center">
+            <div class="flex flex-col items-center gap-2 text-center mb-8 md:flex-row md:mb-0 md:text-left">
+                <img class="size-24" src="imgs/bread.svg" alt="bread image">
+                <h1 class="text-2xl">Bread Money Return <span class="text-blue-500 font-bold">Calculator</span></h1>
+            </div>
+        </header>
+        
+        <!-- Main section -->
+        <main class="flex flex-col gap-12 md:items-center">
+            <!-- Config -->
+            <section id="section-config" class="flex flex-col gap-4">
+                <!-- Opens config modal -->
+                <div class="flex items-center justify-center">
+                    <button class="bg-blue-500 py-2 px-5 text-slate-50 font-bold rounded-md block transition-all ease-linear hover:bg-blue-700" id="button-bread-cost-config-modal-open" type="button">Config</button>
+                </div>
+                
+                <!-- Config modal -->
+                <dialog id="modal-bread-cost-config" class="p-12 bg-slate-50 rounded-md border border-blue-500 shadow-md">
+                    <div class="flex flex-col gap-4 justify-center items-center">
+                        <img class="size-16" src="imgs/bread.svg" alt="bread image">
+                        <h1 class="font-semibold text-2xl mb-12">Set how much 1 bread costs.</h1>
+                    </div>
+                    <form id="form-config" class="flex flex-col gap-8">
+                        <div class="flex flex-col gap-2">
+                            <label for="breadCost" class="font-bold text-sm">Bread Cost</label>
+                            <input required min="0.01" type="number" step="0.01" id="input-config-bread-cost" name="breadCost" placeholder="How much does 1 bread cost?" class="outline-blue-700 border border-blue-700 py-1 px-2 rounded-sm">
+                            <span class="text-sm text-gray-500 italic">1 bread = R$?</span>
+                        </div>
+    
+                        <div class="flex flex-row items-center justify-center gap-12">
+                            <button type="submit" class=" py-2 px-4 bg-blue-500 rounded-md text-slate-50 font-bold transition-all ease-in-out hover:bg-blue-700">Save</button>
+                            <button id="button-bread-cost-config-modal-close" type="button" class="py-2 px-4 bg-red-500 rounded-md text-slate-50 font-bold transition-all ease-in-out hover:bg-red-700">Close</button>
+                        </div>
+                    </form>
+                </dialog>
+    
+                <!-- Paragraph -->
+                <p id="text-bread-cost-output" class="text-sm font-semibold text-center">How much each bread costs: R$00</p>
+            </section>
+    
+            <!-- Money to how many breads can be bought -->
+            <section id="container-money-to-bread">
+                <!-- Form container -->
+                <div>
+                    <form id="form-money-to-bread" class="flex flex-col gap-6">
+                        <div class="flex flex-col gap-2">
+                            <label for="moneyUser" class="font-bold text-sm">Money You Have:</label>
+                            <input required min="0.01" type="number" step="0.01" id="input-user-money" name="moneyUser" placeholder="Money you got..." class="outline-blue-700 border border-blue-700 py-1 px-2 rounded-sm">
+                            <span class="text-sm text-gray-500 italic">How much money you have?</span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="manyBreadsUserWant" class="font-bold text-sm">Many Breads You Want:</label>
+                            <input type="number" id="input-user-breads-amount" name="manyBreadsUserWant" placeholder="How many breads you want..." class="outline-blue-700 border border-blue-700 py-1 px-2 rounded-sm">
+                            <span class="text-sm text-gray-500 italic">How many breads you want to buy?</span>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <button type="submit" class="bg-blue-500 py-2 px-5 text-slate-50 font-bold rounded-md block transition-all ease-linear hover:bg-blue-700">Calculate</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Result container -->
+                <div class="flex flex-col gap-2 mt-8">
+                    <p class="text-center font-semibold md:text-left" id="text-user-money-back-setting-breads-output">Money you get back with that amount of breads</p>
+                    <p class="text-center font-semibold md:text-left" id="text-user-money-back-output">Money you get back</p>
+                    <p class="text-center font-semibold md:text-left" id="text-user-breads-can-be-bought-output">Many breads you can buy</p>
+                </div>
+            </section>
+    
+            <!-- Breads you want to how many money it cost SOON -->
+            <section id="container-bread-to-money" class="hidden"></section>
+        </main>
+    
+        <!-- Footer -->
+        <footer class="mt-12 flex justify-center">2024 &copy; Antonio Mauricio</footer>
+    </div>
+    
+    <!-- Main script -->
+    <script type="module" src="dist/main.js"></script>
+</body>
+</html>
