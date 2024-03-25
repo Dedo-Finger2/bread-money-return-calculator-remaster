@@ -1,9 +1,6 @@
-# ![Bread Money Return Calculator](https://raw.githubusercontent.com/Dedo-Finger2/bread-money-return-calculator-remaster/master/imgs/project-title-img.png?token=GHSAT0AAAAAACPYHAL4PM4A3VZYN3DIRFMAZQBN43Q)
+# ![Bread Money Return Calculator](https://raw.githubusercontent.com/Dedo-Finger2/bread-money-return-calculator-remaster/master/imgs/project-title-img.png?token=GHSAT0AAAAAACPYHAL4WSJF3J335D7EJ6WAZQBOUHA)
 
-[![license](https://img.shields.io/github/license/Dedo-Finger2/bread-money-return-calculator-remaster.svg)](https://github.com/Dedo-Finger2/bread-money-return-calculator-remaster/blob/master/LICENSE)
-
-
-<img src="https://raw.githubusercontent.com/Dedo-Finger2/bread-money-return-calculator-remaster/master/imgs/project-screen.png?token=GHSAT0AAAAAACPYHAL4ZVJUNJRKO564AODMZQBN64Q" />
+<img src="https://raw.githubusercontent.com/Dedo-Finger2/bread-money-return-calculator-remaster/master/imgs/project-screen.png?token=GHSAT0AAAAAACPYHAL5R2DYZN3T46WWUZPCZQBOUYQ" />
 
 ## 🚩 Table of Contents
 
@@ -39,7 +36,7 @@ The Bread Money Return Calculator is a simple and user-friendly application desi
 
 ## 📱 Devices Support
 
-<img src="https://raw.githubusercontent.com/Dedo-Finger2/bread-money-return-calculator-remaster/master/imgs/devices.png?token=GHSAT0AAAAAACPYHAL5FFG4LJNLXGSLVGQAZQBOKWQ" />
+<img src="https://raw.githubusercontent.com/Dedo-Finger2/bread-money-return-calculator-remaster/master/imgs/devices.png?token=GHSAT0AAAAAACPYHAL4ECHLCWR2X2WFRVSAZQBOVEQ" />
 
 
 ## 📜 License
