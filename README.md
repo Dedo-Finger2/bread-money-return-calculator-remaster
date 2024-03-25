@@ -8,6 +8,7 @@
 - [Features](#-features)
 - [How to Use](#-how-to-use)
 - [Browser Support](#-browser-support)
+- [Devices Support](#-devices-support)
 - [License](#-license)
 
 ## 📝 Overview
