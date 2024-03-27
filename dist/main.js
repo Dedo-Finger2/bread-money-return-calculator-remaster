@@ -41,6 +41,7 @@ if (formMoneyToBread &&
     textUserMoneyReturnWithSettingBreadsOutput) {
     formMoneyToBread.addEventListener("submit", function (event) {
         event.preventDefault();
+        console.log(localStorage.getItem("breadCost"));
         if (!localStorage.getItem("breadCost") ||
             Number(localStorage.getItem("breadCost")) <= 0) {
             alert("Set how much does 1 loaf cost first!");

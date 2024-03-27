@@ -70,6 +70,8 @@ if (
   formMoneyToBread.addEventListener("submit", (event: SubmitEvent) => {
     event.preventDefault();
 
+    console.log(localStorage.getItem("breadCost"));
+
     if (
       !localStorage.getItem("breadCost") ||
       Number(localStorage.getItem("breadCost")) <= 0
