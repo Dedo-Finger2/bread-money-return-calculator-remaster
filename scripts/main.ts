@@ -70,8 +70,21 @@ if (
   formMoneyToBread.addEventListener("submit", (event: SubmitEvent) => {
     event.preventDefault();
 
+    if (
+      !localStorage.getItem("breadCost") ||
+      Number(localStorage.getItem("breadCost")) <= 0
+    ) {
+      alert("Set how much does 1 loaf cost first!");
+      return;
+    }
+
     const userMoney: number = Number(inputUserMoney.value);
     const manyBreadsUserWant: number = Number(inputUserWantingBreadCount.value);
+
+    if (userMoney < Number(localStorage.getItem("breadCost"))) {
+      alert("You can't buy loaves, too less money!");
+      return;
+    }
 
     function countManyBreadsCanByBought(userMoney: number): number {
       const breadCost: number = Number(localStorage.getItem("breadCost"));
